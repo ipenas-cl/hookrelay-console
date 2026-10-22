@@ -1,0 +1,29 @@
+:root { font-family: ui-sans-serif, system-ui, sans-serif; color: #e6e8eb; background: #0f1115; }
+body { margin: 0; }
+.app { max-width: 1100px; margin: 0 auto; padding: 24px; }
+header { display: flex; align-items: center; gap: 12px; }
+h1 { font-size: 22px; margin: 0; }
+.muted { color: #8a919c; font-weight: 400; }
+.mono { font-family: ui-monospace, monospace; font-size: 12px; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0; }
+.stat { background: #171a21; border-radius: 10px; padding: 14px; border-left: 4px solid #444; }
+.stat .value { font-size: 28px; font-weight: 600; }
+.stat .label { color: #8a919c; text-transform: uppercase; font-size: 11px; letter-spacing: .08em; }
+.stat.pending { border-color: #e0b341; } .stat.inflight { border-color: #4aa3ff; }
+.stat.delivered { border-color: #3fbf7f; } .stat.dead { border-color: #ef5a5a; }
+.tabs { display: flex; gap: 6px; margin-bottom: 12px; }
+button { background: #222733; color: inherit; border: 1px solid #2f3542; border-radius: 6px; padding: 6px 12px; cursor: pointer; }
+button[aria-selected="true"] { background: #2f6fed; border-color: #2f6fed; }
+button.danger { margin-left: auto; background: #5a1f1f; border-color: #ef5a5a; }
+table { width: 100%; border-collapse: collapse; background: #171a21; border-radius: 10px; overflow: hidden; }
+th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid #222733; font-size: 14px; }
+tbody tr { cursor: pointer; } tbody tr:hover { background: #1d212a; }
+.badge { padding: 2px 8px; border-radius: 999px; font-size: 12px; background: #333; }
+.badge.pending { background: #4a3c12; } .badge.inflight { background: #12324a; }
+.badge.delivered { background: #133a28; } .badge.dead { background: #4a1616; } .badge.mock { background: #3b2a5a; }
+.error, .notice { padding: 10px 12px; border-radius: 8px; margin-bottom: 12px; }
+.error { background: #4a1616; } .notice { background: #133a28; } .error-text { color: #ff8a8a; }
+.drawer { position: fixed; top: 0; right: 0; width: 440px; height: 100vh; overflow: auto; background: #171a21; padding: 24px; box-shadow: -8px 0 24px #0008; box-sizing: border-box; }
+.drawer .close { position: absolute; top: 16px; right: 16px; }
+dl { display: grid; grid-template-columns: 130px 1fr; gap: 6px 12px; } dt { color: #8a919c; } dd { margin: 0; word-break: break-all; }
+pre { background: #0f1115; padding: 12px; border-radius: 8px; overflow: auto; font-size: 12px; }
